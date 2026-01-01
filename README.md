@@ -1,8 +1,9 @@
-# φ¹² Fractal Holographic Memory Kernel (RSCS)
+# PHI¹² Fractal Memory (Patent Pending)
 
-83,333:1 compression • Stationary phase φ¹² spiral  
-![φ¹²](phi12_fig1.svg)
+[![PHI12](phi12.svg)](phi12.svg)
 
-## USPTO Provisional Filed 2025-12-31
-- Claims: Radial spiral encoding, 83kx glyph compression
-- Fig1: Center zoom (83kx density)
+**Benchmark:** 258k φ-nodes/sec (Termux ARM64)
+
+
+
+**Live fractal:** SVG renders natively
