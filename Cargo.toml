@@ -1,35 +1,10 @@
-# Cargo.toml – φ¹² Spectral OsmoseoKernel (Fractal Phi12 Repo)
-# USPTO Provisional 2025-12-31 – 83kx RSCS Holographic Memory
-
 [package]
-name = "fractal_phi12_osmoseo"
+name = "fractal_phi12"
 version = "0.1.0"
 edition = "2021"
-authors = ["AutonomousQAP <alpharetta-ga@fractalphi12>"]
-description = "φ¹² Spectral Osmoseomechanics Kernel – Multi-model Holographic Consensus"
-repository = "https://github.com/AutonomousQAP/fractal_phi12"
-license = "MIT OR Apache-2.0"
 
 [dependencies]
-tokio = { version = "1.40", features = ["full"] }
-reqwest = { version = "0.12", features = ["json"] }
-serde = { version = "1.0", features = ["derive"] }
-serde_json = "1.0"
-rustfft = "6.2"
-ndarray = "0.15"
-num-complex = "0.4"
-seahash = "4.1"
 rusqlite = { version = "0.32", features = ["bundled"] }
 serde = { version = "1.0", features = ["derive"] }
 serde_json = "1.0"
 rand = "0.8"
-
-[profile.release]
-opt-level = 3
-lto = true
-codegen-units = 1
-panic = "abort"
-
-[[bin]]
-name = "osmoseo"
-path = "src/main.rs"
