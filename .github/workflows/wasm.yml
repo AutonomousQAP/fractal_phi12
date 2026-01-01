@@ -1,0 +1,15 @@
+name: WASM Build
+on: [push]
+jobs:
+  wasm:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - uses: actions-rust-lang/setup-rust@v1
+      with:
+        target: wasm32-unknown-unknown
+    - run: cargo build --target wasm32-unknown-unknown --release
+    - uses: actions/upload-artifact@v4
+      with:
+        name: fractal_phi12.wasm
+        path: target/wasm32-unknown-unknown/release/fractal_phi12.wasm
