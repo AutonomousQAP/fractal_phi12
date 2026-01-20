@@ -1,0 +1,20 @@
+=== QSGAL 1.0 PRIORITY PROOF ===
+Timestamp: Tue Jan 20 11:46:13 UTC 2026
+Location: Guntersville, AL USA
+Key: D8D307AD7B7BA701C84C9C0864E1953A8F169045
+Binary SHA256: fa214dca2851e69886173b2bfc569c88be46660c258e4bd1f04d63811e1d437d
+WASM SHA256: 8009391bd49f411c17480b1af77392f2a7d68b4ab7e75278ee0db4313bf37864
+=== COMPILER OUTPUT ===
+qsgal 1.0.0 - SDK SURFACE LOCKED
+{
+  "commands": [
+    {
+      "op": "scale",
+      "value": 1.618
+    },
+    {
+      "op": "rotate_x",
+      "value": 180.0
+    }
+  ]
+}

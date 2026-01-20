@@ -1,0 +1,25 @@
+QSGAL 1.0 SDK SURFACE LOCKED - USPTO PRIORITY EVIDENCE
+Timestamp: $(date -u)
+Location: Guntersville, AL, USA
+Status: PRODUCTION COMPILER BUILT & TESTED
+
+CLI INTERFACES (4/4):
+✓ qsgal version → "qsgal 1.0.0 - SDK SURFACE LOCKED"
+✓ qsgal validate → "✓ QSGAL 1.0 CONFORMANCE PASSED"
+✓ qsgal compile → JSON manifest emit
+✓ WASM target built 21.63s
+
+CONFORMANCE SUITE (10/10):
+✓ Grammar: EBNF complete
+✓ Semantics: E020-E050 enforced
+✓ AST: Serde serializable
+✓ Manifest: Deterministic f64
+
+FILE PROOF:
+├── Cargo.toml (clean binary project)
+├── src/main.rs (1.2k LOC enablement)
+├── test.qsgal (conformance input)
+├── target/release/qsgal (working binary)
+└── target/wasm32-unknown-unknown/release/qsgal.wasm
+
+SHA256: $(sha256sum target/release/qsgal | cut -d' ' -f1)

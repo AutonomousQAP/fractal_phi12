@@ -1,0 +1,4 @@
+attractor GR { value: 1.618; type: RATIO; }
+primitive Seed { geometry: TETRAHEDRON; }
+rule Grow { { scale 1.618; } Seed snap_to(GR); }
+entry { Grow }
