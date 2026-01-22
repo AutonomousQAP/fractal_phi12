@@ -1,1 +1,6 @@
 /target
+demo*.html
+*.obj
+spec/
+1hr
+hypercube.qsgal
