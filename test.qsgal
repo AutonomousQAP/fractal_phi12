@@ -1,4 +1,7 @@
-attractor GR { value: 1.618; type: RATIO; }
-primitive Seed { geometry: TETRAHEDRON; }
-rule Grow { { scale 1.618; } Seed snap_to(GR); }
-entry { Grow }
+attractor PHI { value: 1.618 }
+primitive TETRA { geometry: TETRAHEDRON }
+rule TESSERACT {
+  { scale 1.0 } TETRA
+  snap_to(PHI)
+}
+entry { TESSERACT }
